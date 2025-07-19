@@ -148,10 +148,10 @@ console.log(strLenght);
 // toUppercase() -> this method transforms all character in a string to uppercase.
 const myname = "naresh";
 const upperName = myname.toUpperCase();
-console.log(upperName);
+console.log(upperName);//NARESH
 // toLowercase()  -> this convert all character in a string lowercase.
 lowername = myname.toLowerCase();
-console.log(lowername);
+console.log(lowername);//naresh
 
 // Trimming White Spaces -> trim(),trimStart(), trimEnd()
 //trim()   method removes whitespaces frome both ends of a string and returns the result.
@@ -176,7 +176,7 @@ const index = sentences.indexOf("l");
 console.log(sentences.indexOf("n")); // return -1
 console.log(index);
 
-// lastIndexof() method work similar but starts the search from the end of the string .allowinf for reverse searching.
+// lastIndexof() method work similar but starts the search from the end of the string .allowing for reverse searching.
 const l_Index = sentences.lastIndexOf("a");
 console.log(l_Index);
 console.log(sentences.indexOf("a"));
@@ -192,7 +192,7 @@ console.log(containToBe); // true
 //---------------------------------------------------------------------
 
 // startWith() and endWith()
-/* for scenario where it is necessary to determine whether a string starts with a certain substring.  
+/* for scenario where it is necessary to determine whether a string starts/Ends with a certain substring.  
 returns boolean value.
 */
 const filename = "document.txt";
@@ -212,6 +212,7 @@ syntax :   string.slice(startIndex,endIndex);
   */
 const sultan = "jalna keshri kartik raut";
 console.log(sultan.slice(6, 11)); //keshr
+console.log(sultan);
 //-------------------------------------------------------
 
 //modifing string  replace()
@@ -231,7 +232,7 @@ const mugic = "tu sahi na to kai aur sahi ";
 const words = mugic.split(); //whole string as array at index[0]
 const seprateWords = mugic.split("");
 //a string with separates with single character as array element.in diffrent indexes.
-const separates = mugic.split("|"); //['tu sahi na to kai aur sahi ']
+const separates = mugic.split(''); //['tu sahi na to kai aur sahi ']
 console.log(separates);
 console.log(
   words + "\n" + typeof words + "\n" + typeof mugic + "\n" + seprateWords
@@ -249,14 +250,14 @@ Adds all the elements of an array into a string, separated by the specified sepa
  If omitted, the array elements are separated with a comma.
 */
 
-const fruts = ["apple", "gava", "mango", "papaya"];
-const joinedString = fruts.join("|");
+const fruits = ["apple", "gava", "mango", "papaya"];
+const joinedString = fruits.join("|");
 console.log(joinedString);
 console.log(
   "type of joinedString is " +
     typeof joinedString +
-    " and  type of fruts is  " +
-    typeof fruts
+    " and  type of fruits is  " +
+    typeof fruits
 );
 //----------------------------------------------------------------------------------------
 

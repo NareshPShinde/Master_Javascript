@@ -1,5 +1,5 @@
 // references -- fcc article , 
-// variable , var let const , undefinde VS not defined , scope of variables .
+// variable , var let const , undefined VS not defined , scope of variables .
 // jargons - declaration , assignment , initialization , value/(Literals), naming convention , hoisting , tempral dead zone.syntaxError , TypeError , ReferenceError
   
 
@@ -117,6 +117,7 @@ console.log(accountId);
 /* toggle block block comment ctr + alt + a */
 
 /*  Recommendetion
+ const doesn't make things fully constant. It protects the variable, not the value.
 Use 'const' as the default.
 Use 'let' if the variable will change in the future.
 Don't use var if no perticular use case     

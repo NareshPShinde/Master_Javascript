@@ -19,7 +19,7 @@ console.log(typeof g);
 
 
 // when you declare a primitive data types in js . it is stored on a stack. a stack is a simple data structure that computer use to store and  retrive data quiickly.
-// non-primitive data types/reference data types > are dynamic in nature , that is ,they do not have a fixed size.(ex. array , function, collection , and other types of object.compter does not directly store that data types in that variable.you have assigned to that variable is pointer that points to the location of the data type in memory. we have two datastructure heap and stack .
+// non-primitive data types/reference data types > are dynamic in nature , that is ,they do not have a fixed size.(ex. array , function, collection , and other types of object.computer does not directly store that data types in that variable.you have assigned to that variable is pointer that points to the location of the data type in memory. we have two datastructure heap and stack .
 /* ex. the object itself is stored on a heap. and its pointer is stored on a stack.   */ 
 
 // Non-Primitive datatypes 
@@ -35,3 +35,10 @@ console.log(item.raje);// both same.
 
 item['friend'] = " prem";
 console.log(item);
+
+// tip : 
+console.log(typeof null === "object");// true , is a bug, but has existed since the early days of JS.
+
+console.log(typeof NaN);
+
+console.log(true+false);
