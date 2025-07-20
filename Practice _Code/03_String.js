@@ -19,7 +19,8 @@ string padEnd()
 string repeat()
 string replace()
 string replaceAll()
-string split()
+string split() -return array
+string join()  -return string
 
 String Search method()
 string indexOf()
