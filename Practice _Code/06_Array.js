@@ -96,9 +96,9 @@ let deleted_elment = number.splice(2, 2, 121, 1212);
 console.log(deleted_elment);
 // number.splice(2,2,121,1212)
 /* @param start — The zero-based location in the array from which to start removing elements.
-           @param deleteCount — The number of elements to remove.
+           @param deleteCount — The number of elements to remove. ifyou want do not delete any element the value is 0. 
            @param items — Elements to insert into the array in place of the deleted elements. */
-console.log(number);
+console.log(number); 
 console.log(typeof deleted_elment);
 console.log(typeof number);
 

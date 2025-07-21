@@ -39,14 +39,26 @@ console.log('lastIndexOf(searchString,position)'+str.lastIndexOf());// Returns t
 console.log('include(searchString ,position) :'+ str.includes('Master',12));
 console.log('startsWith(searchString,position) :'+str.startsWith('Master',1));// determines whether this staring begins with the character of a specified string. returning boolean value. index/position where start search. default is 0.
 console.log('endsWith(searchString,position) :'+str.endsWith('pt',18));//determines whether this ends  with the character of a specified string. returning boolean value. index/position where start search. default is str.lenght.
+const str2 = "programer program to generate program";
 
 console.log("search(string/regex) :"+str.search(/Javascript/g));//Returns the position of the first occurrence of a substring/regular expression.this same like indexOf() but it can not second argument and it is also search for regular expression.if not found return -1.
-console.log("match() :"+str.match(/Master/));//Matches a string or an object that supports being matched against, and returns an array containing the results of that search, or null if no matches are found. 
-console.log("matchAll() :"+str.matchAll(/Master/g));// the modifer should be global g otherwise it will give first occurnce or TypeError. Matches a string with a regular expression, and returns an iterable of matches containing the results of that search.
+
+/* match() -The match() method searches for matches of a regular expression (or string) in a string and returns the first match it finds.match()
+Returns only the FIRST match
+Returns an array or null
+Works with or without global flag */
+const match = str2.match(/program/g);
+console.log("match(string/regex) :"+match); 
+/* The matchAll() method finds ALL matches of a regular expression in a string and returns them as an iterator. You need to use the global flag (g) with your regex.
+Returns ALL matches
+Returns an iterator (convert with [...result] or Array.from())
+REQUIRES the global flag (g) */
+const all= str2.matchAll(/program/g);
+console.log("match(string/regex) :"+[...all]); 
+
 
 // modification and manipulation
 
-const str2 = "programer program to generate program";
 console.log("\n replace(seachValue/regex,replaceValue) :"+str2.replace(/program/,'code'));//Replaces text in a string, using a regular expression or search string
 console.log("replaceAll(seachValue/regex,replaceValue) :"+str2.replaceAll(/program/g,'code'));//Replace all instances of a substring in a string, using a regular expression or search string.
 console.log("repeat() :"+'i fill '+ 'happy ! '.repeat(3));//Returns a String value that is made from count copies appended together. If count is 0, the empty string is returned.
