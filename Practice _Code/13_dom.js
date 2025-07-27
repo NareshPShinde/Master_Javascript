@@ -60,7 +60,7 @@ console.log(demo);
 
 */
  const demoselectAll = document.querySelectorAll('.para')
- console.log(demoselectAll);
+ console.dir(demoselectAll);
  // this is also select html element using selector(css selector).
  /*
   the difference is that it returns all elements that match the selector insted of returning only first oneit select all.
@@ -74,8 +74,26 @@ console.log(demo);
 /*  innerHTML
  this is method that allow we to read or update content and structure of elemeent.
 */
- const content = document.querySelector('#content');
- console.log(content.innerHTML);  
- content.innerHTML= "happy Birthday dear brother! <b>katthu </b>";
- console.log(content.innerHTML);  
- 
+/* You can use innerHTML to access or change the HTML content inside an element as a string. outerHTML, on the other hand, lets you get or set the HTML content of an element as a string, including the original element itself. */
+console.log(democlass[0].innerHTML);
+const first_p = democlass[0].innerHTML="this is <b>1st</b> paragraph in div";
+console.log(first_p);
+console.log(democlass[0].outerHTML);
+const changeHtml =democlass[0].outerHTML='<h1 class="heading-1">updated pargraph to heading throught outerHTML</h1>';
+console.log(changeHtml);
+
+/* The textContent property allows you to set or retrieve the text content of an element, ignoring any HTML tags within it. It's useful when you want to update the text content of an element without affecting its HTML structure. */
+console.log(democlass[0].textContent);
+const changeText = democlass[0].textContent = "this is <b>1st";
+
+/*How to Modify Element Attributes
+The getAttribute() method retrieves the value of a specified attribute of an element,
+while setAttribute() sets or updates the value of a specified attribute.
+
+hasAttribute() checks whether an element has a specific attribute, returning true or false.
+The removeAttribute() method removes a specified attribute from an element.  */
+console.log(democlass[0].getAttribute('class'));
+const changeAttribute = democlass[0].setAttribute('class','para1');
+console.log(changeAttribute);
+
+// console.log(democlass[0].hasAttribute('class'));
