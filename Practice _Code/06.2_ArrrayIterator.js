@@ -41,7 +41,7 @@ parameters :
         current value(required): the value of the curretly selected array element.
         index(optional)        : the index of curent selected element.
         Array(optinal)         : the array object that this element is part of.
-always return undefined.if we try return value foreach ignore it.
+always return undefined.if we try return value foreach JS ignore it.
 forEach is not chainable.
 //  Using Arrow function
  forEach((val,idx,array)=>{statement(s);}) 
