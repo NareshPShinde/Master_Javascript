@@ -92,8 +92,49 @@ while setAttribute() sets or updates the value of a specified attribute.
 
 hasAttribute() checks whether an element has a specific attribute, returning true or false.
 The removeAttribute() method removes a specified attribute from an element.  */
+console.log(democlass[0].hasAttribute('class'));
 console.log(democlass[0].getAttribute('class'));
-const changeAttribute = democlass[0].setAttribute('class','para1');
+const changeAttribute = democlass[0].setAttribute('class','class:para1');
 console.log(changeAttribute);
+//---------------------------------------------------------------------------------------
+// DOM Attributes 
+const anc = document.querySelector('a');
+console.log(anc.href);
+const input = document.querySelector('input');
+console.log(input.value);
+console.log(anc.type);
+console.log(input.type);
+console.log(input.hasAttribute('value'));
+// setting attributes
+anc.href = "https://www.facebook.com/"
+console.log(anc.href);
+// input.value="password";
+console.log(input.value);
+input.placeholder="please fill strong password";
+// remove atttribute
+input.removeAttribute('name');
+console.log(input.hasAttribute("name"));
+//------------------------------------------------------------------------
 
-// console.log(democlass[0].hasAttribute('class'));
+// DOM classes (add ,remove,replace, ,toggle)
+
+//-------------------------------------------------------------------------
+// style property
+input.style.color='orange';
+//------------------------------------------------------------------------
+// hidden property -> control visiblity of element without directly manipulating their style property.
+
+// input.hidden=true;
+//----------------------------------------------------------------------------
+// html insertionmenthod 
+/* 1. cassic way to insert html is using innethtml ex . innerHTML = 'i am <b>naresh</b><h1>heading</h1>'; 
+   2.using createElement method
+   -> creating element using - crateElement()
+   -> setting content using - innerHTML
+   -> subsequantly appending it to the target element using - appendchild,...    
+*/
+const first = document.querySelector('first-li');
+const fourth_li = document.createElement('li');
+// fourth_li.setAttribute('fourth-li');
+fourth_li.innerHTML='4';
+first.after(fourth_li);
