@@ -3,7 +3,7 @@ NaN
 typeOf  
 truthy , falsy 
 shallo and deep copy .
-prototype
+prototype in deep .  add js file for research. -> proto.js
 scope in Js(function) , variable shadowing
 
 

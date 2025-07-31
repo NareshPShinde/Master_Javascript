@@ -15,7 +15,8 @@
   4.Object Methods
 */
 
-/* A JavaScript object is a collection of key-value pairs, where each key (also known as a property or method) is a string or Symbol, and each value can be of any data type, including other objects, arrays, or functions. Objects are used to store and organize data and can be manipulated through various methods to perform operations and represent complex structures. */
+/* A JavaScript object is a collection of key-value pairs, where each key (also known as a property or method) is a string or Symbol, and each value can be of any data type, including other objects, arrays, or functions. Objects are used to store and organize data and can be manipulated through various methods to perform operations and represent complex structures. 
+mdn -> The Object type represents one of JavaScript's data types .It is used to store various keyed collections and more complex entities.*/
 
 //  Defining Object
 /* Methods for Defining JavaScript Objects
@@ -30,6 +31,7 @@ Using Object.fromEnties() */
 const mySym = Symbol("key1");
 
 person = {
+  1 : 12,
   name: "Naresh",
   lastName: "Shinde",
   [mySym]: "myKey1",
@@ -47,6 +49,9 @@ console.log(person["name"]);
 console.log(person["lastName"]);
 console.log(person[mySym]);
 console.log(typeof mySym);
+console.log(person[1]);// can not access using . notation.
+console.log(person['1']);
+
 
 // Dot vs Bracket Notation
 /* 

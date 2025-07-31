@@ -35,7 +35,7 @@ console.log(add(12,11));
 // function hoisting
 /* #1 function declaration are with both their name and the function body. this means function canm be called before it defination in the code. 
 #2 function expression are trated like variable declaration. the variable itself is hoisted ,but the function expression not assigned until the line of execution . this means calling the function before its assingment will result in an error.
-#3 variable declared let and const inside the are hoisted to the top of the function scope, but they are reain int the TDZ . this prevent access to them before they are initialized.
+#3 variable declared let and const inside the are hoisted to the top of the function scope, but they are remain in the TDZ . this prevent access to them before they are initialized.
 */
 greet();
 function greet() {
