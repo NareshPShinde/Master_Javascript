@@ -11,7 +11,7 @@ The Document Object Model (DOM) is a programming interface for web documents. It
 The DOM contains the document object, which represents the DOM structure of the current web page and has properties and methods that allow you to manipulate the DOM.
 
 document -> the document refer to the webpage you see in the browser.
-object -> means element like images, header, paragragh , are trated like object . each object has its properties(id,class,title) and method. 
+object -> means eleemnt like images, header, paragragh , are trated like object . each object has its properties(id,class,title) and method. 
             using these properties and methods, youcan manipulate the elements.
 model -> represenstation or copy of the html document as hierarchical tree. the tree include all the elements . and caputre parent-child relatioship between them.
 
@@ -38,7 +38,7 @@ node -> each entry in the tree is called node.
    querySelector()
    querySelectorAll()
     */
- const demoId = document.getElementById("#container");
+ const demoId = document.getElementById("container");
  console.log(demoId);
  /* Returns a reference to the first object with the specified value of the ID attribute.
 @param elementId — String that specifies the ID value.
@@ -125,27 +125,16 @@ input.style.color='orange';
 // hidden property -> control visiblity of element without directly manipulating their style property.
 
 // input.hidden=true;
-
-//===================================================================
-// html insertion menthod 
-
-/* 1. classic way to insert html is using innethtml ex . innerHTML = 'i am <b>naresh</b><h1>heading</h1>'; 
+//----------------------------------------------------------------------------
+// html insertionmenthod 
+/* 1. cassic way to insert html is using innethtml ex . innerHTML = 'i am <b>naresh</b><h1>heading</h1>'; 
    2.using createElement method
    -> creating element using - crateElement()
    -> setting content using - innerHTML
    -> subsequantly appending it to the target element using - appendchild,...    
 */
-const first = document.querySelector('#first-li');
-const ul = document.querySelector('#ul-list');
+const first = document.querySelector('first-li');
 const fourth_li = document.createElement('li');
 // fourth_li.setAttribute('fourth-li');
-fourth_li.innerHTML='<h1>4</h1>';
-fourth_li.appendChild(ul);
-
-// Dom sibling 
-console.log(first.parentElement);
-console.log(first.parentElement.parentElement);
-console.log(first.parentElement.parentElement.parentElement);
-console.log(first.parentElement.parentElement.parentElement.parentElement);
-console.log(first.nextSibling);
-console.log(first.previousSibling);
+fourth_li.innerHTML='4';
+first.after(fourth_li);
