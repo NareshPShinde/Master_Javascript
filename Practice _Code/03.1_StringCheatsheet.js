@@ -61,13 +61,13 @@ console.log("match(string/regex) :"+[...all]);
 
 console.log("\n replace(seachValue/regex,replaceValue) :"+str2.replace(/program/,'code'));//Replaces text in a string, using a regular expression or search string
 console.log("replaceAll(seachValue/regex,replaceValue) :"+str2.replaceAll(/program/g,'code'));//Replace all instances of a substring in a string, using a regular expression or search string.
-console.log("repeat() :"+'i fill '+ 'happy ! '.repeat(3));//Returns a String value that is made from count copies appended together. If count is 0, the empty string is returned.
+console.log("repeat(count) :"+'i fill '+ 'happy ! '.repeat(3));//Returns a String value that is made from count copies appended together. If count is 0, the empty string is returned.
 
 
 // spliting and combining
 
-console.log("\n split(seperator,limit) :"+str.split(''));//split the sting whenever encounter specified seperator.Split a string into substrings using the specified separator and return them as an array. 
-// seperator :A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
+console.log("\n split(seperator/regEx,limit) :"+str.split(''));//split the sting whenever encounter specified seperator.Split a string into substrings using the specified separator and return them as an array. 
+// seperator :pattern describing where each split should occure.(can be undefined , as string , or on an object with symbol.split()) A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
 // limit : A value used to limit the number of elements returned in the array.
 const stringSplit = str.split(' ');
 console.log("split(seperater , limit)"+stringSplit); // return Array type object .

@@ -31,6 +31,7 @@ let ar1 = [1, 2, 3, 4, 5];
 let ar2 = [1, 2, 3, 4, 5];
 let comparr = ar1 === ar2;
 console.log(comparr); //False
+console.log(typeof[] === "object");
 
 let ar3 = ar1;
 console.log(ar3 === ar1); //true

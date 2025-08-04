@@ -42,7 +42,14 @@ Why do you need to know about the JavaScript Array at() method?
 #  arrays can be a collection of elements of any type. This means that you can create an array with elements of type String, Boolean, Number, Objects, and even other Arrays.
 # The position of an element in the array is known as its index. In JavaScript, the array index starts with 0, and it increases by one with each element.
 #  JavaScript arrays are not of fixed length.
+   💠JS array Characteristics
+   1.JavaScript arrays are resizable and can contain a mix of different data types. (When those characteristics are undesirable, use typed arrays instead.)
+   2.JavaScript arrays are not associative arrays and so, array elements cannot be accessed using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective string form) as indexes.
+   3.JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on — and the last element is at the value of the array's length property minus 1.
+   4.JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies).
 
+   array elemnets can - > array element can be of any data type , and even mixed togetherin a single array.
+                        primitive data types ex,null,undefined ,string and  so on or function, another array or object.
 */
 
 // create array in js  1 ) Array Literal ->  Const Array_name = [item1,item2,...] , 2) Array Constructer const Array_name = new Array() 

@@ -39,7 +39,10 @@ string
 
 */
 //  String
-/* Sequences of character(zero or more) that enclosed in either single or double quotes. */
+/* Sequences of character(zero or more) that enclosed in either single or double quotes.
+ the textual data is stored as strings. There is no separate type for a single character.
+The internal format for strings is always UTF-16, it is not tied to the page encoding. */
+
 const str = " this is text";
 const str2 = "this is Text";
 // both are same functional work.
@@ -137,7 +140,9 @@ console.log(cmb); // hello
 //-----------------------------------------------------------------------------
 // Characteristics if string
 // Immutable
-/* once string is created its content cannot be changed. operations like concatenation , changing case leaving original string unmodified   */
+/* once string is created its content cannot be changed. operations like concatenation , changing case leaving original string unmodified  
+-This concept ensures predictability, simplifies debugging, and aligns with functional programming principles.
+ */
 
 //          *  String Methods *
 //lenght property of string return the lenght of a string.
@@ -183,7 +188,8 @@ console.log(l_Index);
 console.log(sentences.indexOf("a"));
 //-------------------------------------------------------------------
 
-/*  include() for substring presence 
+/*  includes() for substring presence 
+perform case-sensetive search to determine whether a given string may be found within a this string. 
   this method simplifies the task of checking whether a string contains a specific substring .
   retruning a boolean value. this method useful for conditional checks.
  */

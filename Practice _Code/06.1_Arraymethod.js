@@ -75,7 +75,7 @@ console.log("concate(array/elements) : "+arr.concat(arr2,36,48));
 
 
 //flat()
-//slice(start ,end)// does not change original array.creat new array. return slice asnew array .end index is not included.
+//slice(start ,end)// does not change original array.creat new array. return slice as new array .end index is not included.
 console.log(arr);
 console.log("slice(start ,end) :"+arr.slice(1,4));
 //splice(start ,deleteCount,element)
